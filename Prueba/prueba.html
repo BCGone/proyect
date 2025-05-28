@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - BCG</title>
+  <form method="POST" action="Pruebaphp.php">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: url('foto18.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      padding: 2rem;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+      margin-top: 5vh;
+    }
+
+    h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+
+    input:focus {
+      border-color: #777;
+      outline: none;
+    }
+
+    .btn {
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .btn-login {
+      background-color: #1f1f1f;
+      color: #fff;
+    }
+
+    .btn-login:hover {
+      background-color: #333;
+    }
+
+    a {
+      color: #1f1f1f;
+      text-decoration: underline;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Iniciar Sesión</h2>
+    <form method="POST" action="login.php">
+      <input type="text" name="username" placeholder="Usuario" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <input type="submit" value="Entrar" class="btn btn-login">
+    </form>
+    <p>¿No tienes cuenta? <a href="register.html">Regístrate aquí</a></p>
+  </div>
+<a href=""></a>
+
+
+</body>
+</html>

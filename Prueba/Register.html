@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro - BCG</title>
+  <form method="POST" action="Register.php"></form>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: url('foto1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      padding: 2rem;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+      margin-top: 2rem;
+    }
+
+    h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+
+    input:focus {
+      border-color: #777;
+      outline: none;
+    }
+
+    .btn {
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .btn-login {
+      background-color: #1f1f1f;
+      color: #fff;
+    }
+
+    .btn-login:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Registro</h2>
+    <form method="POST" action="register.php">
+      <input type="text" name="username" placeholder="Usuario" required>
+      <input type="email" name="email" placeholder="Correo" required>
+      <input type="password" name="password" placeholder="Contraseña" required>
+      <input type="submit" value="Registrarse" class="btn btn-login">
+    </form>
+  </div>
+
+</body>
+</html>
